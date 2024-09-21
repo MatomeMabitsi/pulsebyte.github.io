@@ -29,6 +29,16 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <script>
+        function handleError(event) {
+          if (event.target.status >= 400 && event.target.status < 600) {
+            window.location.href = "404.html"; // Replace "404.html" with the actual path to your 404 page
+          }
+        }
+        
+        window.addEventListener('error', handleError);
+        </script>
 </head>
 
 <body>
